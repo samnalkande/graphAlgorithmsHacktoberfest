@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+
+        public override void calculararea()
+        {
+            Console.WriteLine("Ingrese el valor del radio del circulo:");
+            this.lado = Convert.ToDouble(Console.ReadLine());
+
+            this.area = Math.PI * Math.Pow(this.lado, 2);
+
+            Console.WriteLine("El area del " + this.nombre + " es " + this.area);
+            Console.ReadLine();
+            Console.Clear();
+
+        }
+
+        public override void calcularperimetro()
+        {
+            Console.WriteLine("Ingrese el valor del radio del circulo");
+            this.lado = Convert.ToDouble(Console.ReadLine());
+
+
+            this.perimetro = Math.PI * Math.Pow(this.lado, 2);
+            Console.WriteLine("El perimetro del " + this.nombre + " es " + this.perimetro);
+            Console.ReadLine();
+            Console.Clear();
+        }
